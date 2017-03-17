@@ -65,3 +65,16 @@ var average = function (a, b, c) {
     return sum;
 }
 console.log(average(2, 3, 4))
+
+// Inner functions
+// JavaScript function declarations are allowed inside other functions. 
+function betterExampleNeeded() {
+  var a = 1;
+  function oneMoreThanA() {
+    return a + 1;
+  }
+  return oneMoreThanA();
+}
+
+betterExampleNeeded();
+
